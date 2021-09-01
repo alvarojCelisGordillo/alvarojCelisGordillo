@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bienvenido</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <!-- Header -->
+      <nav class="mynav collapsible">
+        <a href="index.html" class="icon-primary">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="../IMG/sprite.svg#bank"></use>
+            </svg>
+          </span>
+        </a>
+        <svg class="icon icon--white mynav__toggler">
+          <use xlink:href="../IMG/sprite2.svg#menu"></use>
+        </svg>
+        <ul class="list mynav__list collapsible__content">
+          <li class="mynav__item item_1">
+            <a href="index.html">Inicio</a>
+          </li>
+          <li class="mynav__item"><a @click="functionNotAvailable">Personas</a></li>
+          <li class="mynav__item"><a @click="functionNotAvailable">Contacto</a></li>
+          <li class="mynav__item"><a @click="functionNotAvailable">Puntos de atención</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main entry -->
+
+      <div class="entry container">
+        <div class="mycard entry__header">
+          <header class="heading-text">
+            <h3>Bienvenido!!</h3>
+            <p>
+              Por favor ingresa tu numero de cuenta y contraseña para ingresar y hacer uso de tu
+              cuenta online.
+            </p>
+          </header>
+          <div class="entry__form">
+            <form class="entry__input">
+              <div>
+                <label class="entry__account"><h4>Numero de Cuenta</h4></label>
+                <input type="number" class="entry__input-field" />
+                <h6>Nunca compartiremos tu clave con alguien más.</h6>
+              </div>
+              <div>
+                <label class="entry__password" type="password"><h4>Clave</h4></label>
+                <input type="password" class="entry__input-field" />
+              </div>
+              <div class="entry__button">
+                <a href="main.html" class="btn-entry">Ingresar</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+      <!-- Footer -->
+
+      <footer class="myblock myblock--dark myfooter">
+        <div class="mycontainer mygrid myfooter__sections">
+          <section class="collapsible collapsible--expanded myfooter__section">
+            <header class="collapsible__header">
+              <h2 class="collapsible__heading myfooter__heading">Personas</h2>
+              <span class="icon-container collapsible__chevron">
+                <svg class="icon icon--primary">
+                  <use xlink:href="../IMG/sprite3.svg#chevron-down"></use>
+                </svg>
+              </span>
+            </header>
+            <div class="collapsible__content">
+              <ul class="list">
+                <li><a @click="functionNotAvailable">Beneficios</a></li>
+                <li><a @click="functionNotAvailable">Enviar y recibir dinero</a></li>
+                <li><a @click="functionNotAvailable">Pagos</a></li>
+                <li><a @click="functionNotAvailable">Segmentos</a></li>
+                <li><a @click="functionNotAvailable">Canales</a></li>
+              </ul>
+            </div>
+          </section>
+          <section class="collapsible myfooter__section">
+            <header class="collapsible__header">
+              <h2 class="collapsible__heading myfooter__heading">Te puede interesar</h2>
+              <span class="icon-container collapsible__chevron">
+                <svg class="icon icon--primary">
+                  <use xlink:href="../IMG/sprite3.svg#chevron-down"></use>
+                </svg>
+              </span>
+            </header>
+            <div class="collapsible__content">
+              <ul class="list">
+                <li><a @click="functionNotAvailable">Educación Financiera</a></li>
+                <li><a @click="functionNotAvailable">Información Legal Colombia</a></li>
+                <li><a @click="functionNotAvailable">Condiciones de uso</a></li>
+                <li><a @click="functionNotAvailable">Venta de usados</a></li>
+                <li><a @click="functionNotAvailable">Tarifario</a></li>
+                <li><a @click="functionNotAvailable">Grupo Tu Banco</a></li>
+              </ul>
+            </div>
+          </section>
+          <section class="collapsible myfooter__section">
+            <header class="collapsible__header">
+              <h2 class="collapsible__heading myfooter__heading">Contáctanos</h2>
+              <span class="icon-container collapsible__chevron">
+                <svg class="icon icon--primary">
+                  <use xlink:href="../IMG/sprite3.svg#chevron-down"></use>
+                </svg>
+              </span>
+            </header>
+            <div class="collapsible__content">
+              <p>Carrera 22 # 34 - 75 Medellín – Colombia</p>
+              <br />
+              <p>
+                (57 1) 393 09 02 Medellín (57 4) 734 90 67 Cali (57 2) 396 05 60 Cartagena (57 7)
+                691 25 25
+              </p>
+            </div>
+          </section>
+
+          <section class="myfooter__brand">
+            <img src="../IMG/Bank_logo_final.png" alt="" />
+            <p class="myfooter__copyright">Copyright 2021 Alvaro Celis</p>
+          </section>
+        </div>
+      </footer>
+    </div>
+
+    <!-- JS link for drop down menus -->
+    <script src="../JS/main.js"></script>
+  </body>
+  <script src="JS/vue.js"></script>
+  <script src="JS/app.js"></script>
+  <script src="JS/sweetalert2.all.min.js"></script>
+</html>

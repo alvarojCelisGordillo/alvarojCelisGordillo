@@ -23,21 +23,14 @@ var app = new Vue({
               })
         },
 
-        succesfulLogin() {
-            Swal.fire({
-                icon: 'success',
-                title: 'Oops...',
-                text: 'Something went wrong!',
-                footer: '<a href="">Why do I have this issue?</a>'
-              })
-        },
+       
 
         succesfulWithdrawal(){
             Swal.fire({
                 icon: 'success',
                 title: '¡Tu retiro ha sido realizado exitosamente!',
                 text: `Tu nuevo saldo es de ${this.formatNumber(this.account_balance)}`,
-                footer: '<a href="">¡Gracias por elegirnos a nosotros!</a>'
+                footer: '<a href="">¡Gracias por elegirnos!</a>'
               })
         },
 
@@ -46,7 +39,7 @@ var app = new Vue({
                 icon: 'error',
                 title: '¡Lo sentimos, no tienes fondos suficientes!',
                 text: '¡Por favor realiza un deposito de tu cuenta para realizar pagos y obtener más beneficios!',
-                footer: '<a href="">¡Gracias por elegirnos a nosotros!</a>'
+                footer: '<a href="">¡Gracias por elegirnos!</a>'
               })
         },
 
@@ -55,7 +48,7 @@ var app = new Vue({
                 icon: 'error',
                 title: '¡Lo sentimos, no has seleccionado un monto valido!',
                 text: '¡Por favor intentalo de nuevo!',
-                footer: '<a href="">¡Gracias por elegirnos a nosotros!</a>'
+                footer: '<a href="">¡Gracias por elegirnos!</a>'
               })
         },
 
@@ -64,7 +57,7 @@ var app = new Vue({
                 icon: 'info',
                 title: '¡Felicidades!, ¡Tu dinero está en el mejor lugar!',
                 text: `Tu saldo actual es de ${this.formatNumber(this.account_balance)}`,
-                footer: '<a href="">¡Gracias por elegirnos a nosotros!</a>'
+                footer: '<a href="">¡Gracias por elegirnos!</a>'
               })
         },
 
@@ -73,7 +66,7 @@ var app = new Vue({
                 icon: 'success',
                 title: `Tu Factura es de un total de ${this.formatNumber(this.consumption_value)}`,
                 text: 'Se te aplicara un subsidio del 40% sobre tu cargo fijo de $2300',
-                footer: '<a href="">¡Gracias por elegirnos a nosotros!</a>'
+                footer: '<a href="">¡Gracias por elegirnos!</a>'
               })
         },
 
@@ -82,7 +75,7 @@ var app = new Vue({
                 icon: 'success',
                 title: `Tu Factura es de un total de ${this.formatNumber(this.consumption_value)}`,
                 text: 'Se te aplicara un subsidio del 30% sobre tu cargo fijo de $3200',
-                footer: '<a href="">¡Gracias por elegirnos a nosotros!</a>'
+                footer: '<a href="">¡Gracias por elegirnos!</a>'
               })
         },
 
@@ -91,7 +84,7 @@ var app = new Vue({
                 icon: 'success',
                 title: `Tu Factura es de un total de ${this.formatNumber(this.consumption_value)}`,
                 text: 'Se te aplicara un subsidio del 10% sobre tu cargo fijo de $3900',
-                footer: '<a href="">¡Gracias por elegirnos a nosotros!</a>'
+                footer: '<a href="">¡Gracias por elegirnos!</a>'
               })
         },
 
@@ -160,7 +153,6 @@ var app = new Vue({
 
         payWaterBill(){
             this.calculateBill();
-                   
         },
         
         calculateBill() {
